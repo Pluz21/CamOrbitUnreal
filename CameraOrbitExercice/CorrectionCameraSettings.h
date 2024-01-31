@@ -25,7 +25,7 @@ struct FOffset
 		FVector _x = _target->GetActorForwardVector() * xOffset;
 		FVector _y = _target->GetActorRightVector() * yOffset;
 		FVector _z = _target->GetActorUpVector() * zOffset;
-		return /*_target->GetActorLocation() +*/ _x + _y + _z;
+		return _target->GetActorLocation() +  _x + _y + _z;
 	}
 
 	FVector WorldOffset(AActor* _target)

@@ -64,5 +64,8 @@ void UCorrectionCameraTPS::Debug()
 
 	DrawDebugSphere(GetWorld(), settings->GetOffset().GetOffset(settings->GetTarget()), 70, 25, FColor::Green, 0, 0, 0, 2);
 	DrawDebugLine(GetWorld(), settings->GetCurrentPosition(), settings->GetOffset().GetOffset(settings->GetTarget()), FColor::Magenta, 0, 0, 0, 2);
+	DrawDebugLine(GetWorld(), settings->GetCurrentPosition(), settings->GetTargetLocation(), FColor::Orange, 0, 0, 0, 2);
+
+
 }
 

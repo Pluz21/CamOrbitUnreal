@@ -32,6 +32,7 @@ void UCorrectionCameraBehaviour::TickComponent(float DeltaTime, ELevelTick TickT
 void UCorrectionCameraBehaviour::Debug()
 {
 	DrawDebugSphere(GetWorld(), GetOwner()->GetActorLocation(), 10, 25, FColor::Red, false, 0, 0, 2);
+
 }
 
 void UCorrectionCameraBehaviour::InitItem()
